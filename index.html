@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ধন্যবাদ - Ad Pro Solution</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Google Fonts for Bengali (Hind Siliguri) -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Hind Siliguri', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#4F46E5', // Indigo 600
+                        secondary: '#10B981', // Emerald 500
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #4F46E5, #9333EA);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .success-animation {
+            animation: popIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+            opacity: 0;
+            transform: scale(0.5);
+        }
+        @keyframes popIn {
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50 antialiased selection:bg-primary selection:text-white min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-center items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <i data-lucide="monitor-play" class="text-primary h-8 w-8"></i>
+                <span class="font-bold text-2xl tracking-tight text-gray-900">Ad Pro Solution</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        
+        <!-- Background decoration -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-72 h-72 rounded-full bg-indigo-50 opacity-70 blur-3xl -z-10"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 rounded-full bg-green-50 opacity-70 blur-3xl -z-10"></div>
+
+        <div class="max-w-3xl w-full space-y-8 bg-white p-10 rounded-3xl shadow-xl relative z-10 border border-gray-100 text-center">
+            
+            <!-- Success Icon -->
+            <div class="flex justify-center success-animation delay-100">
+                <div class="bg-green-100 rounded-full p-4">
+                    <div class="bg-green-500 rounded-full p-4 shadow-lg text-white">
+                        <i data-lucide="check-circle" class="w-12 h-12"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="success-animation" style="animation-delay: 200ms;">
+                <h1 class="text-4xl font-extrabold text-gray-900 mb-2">পেমেন্ট সফল হয়েছে!</h1>
+                <h2 class="text-2xl font-bold gradient-text mb-6">আপনাকে অসংখ্য ধন্যবাদ</h2>
+                <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
+                    আপনার ২৬০+ প্রিমিয়াম বাংলা ল্যান্ডিং পেজ বান্ডেলের অর্ডারটি সফলভাবে সম্পন্ন হয়েছে। নিচে দেওয়া বোতামে ক্লিক করে আপনার ফাইলগুলো অ্যাক্সেস করুন।
+                </p>
+            </div>
+
+            <!-- Access Section -->
+            <div class="bg-indigo-50/50 border border-indigo-100 rounded-2xl p-8 mb-8 success-animation" style="animation-delay: 300ms;">
+                <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center justify-center gap-2">
+                    <i data-lucide="folder-open" class="text-primary w-6 h-6"></i>
+                    আপনার প্রোডাক্ট ফাইল
+                </h3>
+                <p class="text-gray-600 mb-6">নিচের গুগল ড্রাইভ লিংক থেকে সব টেমপ্লেট এবং ফাইল ডাউনলোড করে নিন। ভবিষ্যতের জন্য লিংকটি সেভ করে রাখুন।</p>
+                
+                <a href="https://drive.google.com/drive/folders/1QA_-kN2PWUCovFoo6RLVHb6RzYMmRkC5?usp=drive_link" target="_blank" class="inline-flex items-center justify-center gap-3 bg-primary text-white text-lg font-bold px-8 py-4 rounded-full hover:bg-indigo-700 transition transform hover:-translate-y-1 shadow-lg w-full sm:w-auto">
+                    <i data-lucide="download-cloud" class="w-6 h-6"></i>
+                    গুগল ড্রাইভ অ্যাক্সেস করুন
+                </a>
+            </div>
+
+            <!-- Support Notice -->
+            <div class="border-t border-gray-100 pt-8 success-animation" style="animation-delay: 400ms;">
+                <p class="text-sm text-gray-500 flex flex-col items-center justify-center gap-4">
+                    <span class="flex items-center gap-2 font-medium text-gray-700">
+                        <i data-lucide="help-circle" class="w-5 h-5 text-primary"></i>
+                        ফাইল অ্যাক্সেস করতে কোনো সমস্যা হলে আমাদের জানান:
+                    </span>
+                    <span class="flex flex-col sm:flex-row gap-4 items-center">
+                        <a href="https://wa.me/+8801324311078" target="_blank" class="flex items-center gap-2 text-[#25D366] font-semibold hover:underline bg-green-50 px-4 py-2 rounded-lg">
+                            <i data-lucide="message-circle" class="w-5 h-5"></i> WhatsApp: 01324311078
+                        </a>
+                        <a href="https://www.facebook.com/adprosolution" target="_blank" class="flex items-center gap-2 text-[#1877F2] font-semibold hover:underline bg-blue-50 px-4 py-2 rounded-lg">
+                            <i data-lucide="facebook" class="w-5 h-5"></i> Facebook Page
+                        </a>
+                    </span>
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white py-8 border-t border-gray-200 text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-gray-500 font-medium">© ২০২৬ Ad Pro Solution. সর্বস্বত্ব সংরক্ষিত।</p>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
